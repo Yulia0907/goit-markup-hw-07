@@ -1,0 +1,119 @@
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+    background-color: $logo-color;
+}
+.logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.nav,
+.header-nav-logo,
+.logo,
+.header-contacts,
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo,
+.logo-dark {
+    font-family: $font-logo;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $brand-btn-background;
+}
+
+.logo-dark {
+    color: #000000;
+}
+
+.header-nav__link,
+.header-contacts__link {
+    transition: color $transition-duration $transition-timing-function;
+
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $brand-color;
+}
+
+.header-nav .item,
+.header-contacts .item {
+    margin-right: 50px;
+}
+
+.header-contacts .item:last-child,
+.header-nav .item:last-child {
+    margin-right: 0;
+}
+
+.header-nav .item:last-child {
+    margin-left: auto;
+}
+
+.header-contacts__link {
+    transition: color $transition-duration $transition-timing-function;
+
+    color: $brand-second-color;
+}
+
+.header-contacts__icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.header-contacts__icon.tel {
+    width: 10px;
+    height: 16px;
+}
+
+.header-nav__link:hover,
+.header-nav__link:focus,
+.header-contacts__link:hover,
+.header-contacts__link:focus {
+    color: $brand-btn-background;
+}
+
+.item {
+    position: relative;
+}
+
+.header-nav__link.current::after {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -1px;
+
+    border-radius: 2px;
+    color: $brand-btn-background;
+    background-color: $brand-btn-background;
+
+    content: " ";
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
