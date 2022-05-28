@@ -1,3 +1,6 @@
+// Баннер
+
+
 .banner {
     text-align: center;
     padding-top: 200px;
@@ -188,8 +191,9 @@
     border-radius: 4px;
     resize: none;
 
-    transition: outline var(--transition-duration) var(--transition-timing-function);
+    transition: outline $transition-duration $transition-timing-function;
 }
+
 .form__comment::placeholder {
     font-size: 12px;
     line-height: 1.17;
@@ -197,6 +201,7 @@
     color: rgba(117, 117, 117, 0.5)
 
 }
+
 .checkbox-label {
     display: flex;
     align-items: center;
