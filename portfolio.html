@@ -17,31 +17,31 @@
 <body>
     <!-- Шапка -->
     <header class="header">
-        <div class="container nav">
+        <div class="container header__container">
             <nav class="header-nav-logo">
-                <a href="./index.html" lang="en" class="logo">Web<span class="logo-dark">Studio</span></a>
-                <ul class="header-nav">
-                    <li class="item">
-                        <a href="./index.html" style="color:#2196F3;" class="header-nav__link current">Студия</a>
+                <a href="./index.html" lang="en" class="logo">Web<span class="logo__dark">Studio</span></a>
+                <ul class="site-nav">
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="site-nav__link">Студия</a>
                     </li>
-                    <li class="item">
-                        <a href="./portfolio.html" class="header-nav__link">Портфолио</a>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" style="color:#2196F3;" class="site-nav__link  site-nav__link--current">Портфолио</a>
                     </li>
-                    <li class="item">
-                        <a href="#" class="header-nav__link">Контакты</a>
+                    <li class="site-nav__item">
+                        <a href="#" class="site-nav__link">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <ul class="header-contacts">
-                <li class="item">
-                    <a class="header-contacts__link mail" href="mailto:info@devstudio.com">
+                <li class="header-contacts__item">
+                    <a class="header-contacts__link" href="mailto:info@devstudio.com">
                         <svg class="header-contacts__icon">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li class="item">
-                    <a class="header-contacts__link tel" href="tel:+380961111111">
+                <li class="header-contacts__item">
+                    <a class="header-contacts__link" href="tel:+380961111111">
                         <svg class="header-contacts__icon tel">
                             <use href="./images/icons.svg#phone"></use>
                         </svg> +38 096 111 11 11</a>
@@ -53,28 +53,28 @@
    <main>
 <section class="section">
             <div class="container">
-                <h1 hidden class="section-title visually-hidden"> Портфолио </h1>
+                <h1 hidden class="section__title visually-hidden"> Портфолио </h1>
                 <ul class="filtr"> 
-                <li class="filtr-item">
+                <li class="filtr__item">
                     <button type="button" class="filtr__button"> Все </button>
                 </li>
-                <li class="filtr-item">
+                <li class="filtr__item">
                     <button type="button" class="filtr__button"> Веб-сайты </button>
                 </li>
-                <li class="filtr-item">
+                <li class="filtr__item">
                     <button type="button" class="filtr__button"> Приложения </button>
                 </li>
-                <li class="filtr-item"> 
+                <li class="filtr__item"> 
                     <button type="button" class="filtr__button"> Дизайн </button>
                 </li>
-                <li class="filtr-item">
+                <li class="filtr__item">
                     <button type="button" class="filtr__button"> Маркетинг </button>
                 </li>
                 </ul>
                 <ul class="portfolio">
-                    <li class="portfolio-item">
+                    <li class="portfolio__item">
                         <a href="" class="portfolio__link">
-                            <div class="portfolio-thumb">
+                            <div class="portfolio__thumb">
                             <img src="./images/allservices/img5.jpg" alt="трое людей" width="370" height="294" />
                             <div class="card"> 
                                 <p class="card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -86,9 +86,9 @@
                             </div>
                         </a>
                     </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
                 <a href="" class="portfolio__link">
-                    <div class="portfolio-thumb">
+                    <div class="portfolio__thumb">
                     <img src="./images/allservices/img6.jpg" alt="ддвое парнейиграют в баскетбол" width="370" height="294" />
                     <div class="card"> 
                         <p class="card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -100,9 +100,9 @@
                     </div>
                 </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
                 <a href="" class="portfolio__link">
-                    <div class="portfolio-thumb">
+                    <div class="portfolio__thumb">
                     <img src="./images/allservices/img7.jpg" alt="логотип с рыбой" width="370" height="294" />
                     <div class="card"> 
                         <p class="card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -114,9 +114,9 @@
                     </div>
                 </a> 
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
                 <a href="" class="portfolio__link">
-                    <div class="portfolio-thumb">
+                    <div class="portfolio__thumb">
                     <img src="./images/allservices/img8.jpg" alt="наушники" width="370" height="294" />
                     <div class="card"> 
                         <p class="card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -128,9 +128,9 @@
                     </div>
                 </a>
             </li> 
-            <li class="portfolio-item">
+            <li class="portfolio__item">
                 <a href="" class="portfolio__link">
-                    <div class="portfolio-thumb">
+                    <div class="portfolio__thumb">
                     <img src="./images/allservices/img9.jpg" alt="две коробки" width="370" height="294" />
                     <div class="card"> 
                         <p class="card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -142,9 +142,9 @@
                     </div>
                 </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
                 <a href="" class="portfolio__link">
-                    <div class="portfolio-thumb">
+                    <div class="portfolio__thumb">
                     <img src="./images/allservices/img10.jpg" alt="монитор с картой мира" width="370" height="294" />
                     <div class="card"> 
                         <p class="card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -156,9 +156,9 @@
                     </div>
                 </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
                 <a href="" class="portfolio__link">
-                    <div class="portfolio-thumb">
+                    <div class="portfolio__thumb">
                     <img src="./images/allservices/img11.jpg" alt="журнал" width="370" height="294" />
                     <div class="card"> 
                         <p class="card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -170,9 +170,9 @@
                     </div>
                 </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
                 <a href="" class="portfolio__link">
-                    <div class="portfolio-thumb">
+                    <div class="portfolio__thumb">
                     <img src="./images/allservices/img12.jpg" alt="этикетка" width="370" height="294" />
                     <div class="card"> 
                         <p class="card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -184,9 +184,9 @@
                     </div>
                 </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio__item">
                 <a href="" class="portfolio__link">
-                    <div class="portfolio-thumb">
+                    <div class="portfolio__thumb">
                     <img src="./images/allservices/img13.jpg" alt="работанадноутбуком" width="370" height="294" />
                     <div class="card"> 
                         <p class="card__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>

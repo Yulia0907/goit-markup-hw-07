@@ -17,7 +17,7 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Imgban.jpg");
 }
 
-.banner-title {
+.banner__title {
     margin-bottom: 30px;
 
     font-weight: 900;
@@ -93,10 +93,10 @@
     background-color: $logo-color;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-}
 
-.modal__btn:hover {
-    color: $brand-btn-background;
+    &:hover {
+        color: $brand-btn-background;
+    }
 }
 
 .modal__icon {
@@ -111,7 +111,7 @@
     pointer-events: none;
 }
 
-.modal-text {
+.modal__text {
     padding-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -128,10 +128,10 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-}
-
-.form__field:nth-child(4) {
+    
+    &:nth-child(4) {
     margin-bottom: 0;
+}
 }
 
 .form__label {
@@ -192,14 +192,13 @@
     resize: none;
 
     transition: outline $transition-duration $transition-timing-function;
-}
 
-.form__comment::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5)
-
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5)
+    }
 }
 
 .checkbox-label {

@@ -144,7 +144,7 @@ body {
   position: relative;
 }
 
-.site-nav__link--current::after {
+.site-nav__link-current::after {
   position: absolute;
   width: 100%;
   height: 4px;
@@ -172,7 +172,7 @@ body {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Imgban.jpg");
 }
 
-.banner__title {
+.banner-title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -267,7 +267,7 @@ body {
   pointer-events: none;
 }
 
-.modal__text {
+.modal-text {
   padding-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -528,7 +528,7 @@ body {
 }
 
 /* Чем занимаемся */
-.section--padding {
+.section.works {
   padding-top: 0;
 }
 
@@ -540,7 +540,7 @@ body {
   line-height: 1.17;
 }
 
-.works {
+.works ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,7 +582,7 @@ body {
 }
 
 /* Наша команда */
-.section--background {
+.section.people {
   background-color: #F5F4FA;
 }
 
@@ -625,7 +625,7 @@ body {
   margin-right: 0;
 }
 
-.team__thumb {
+.team__tumb {
   padding: 30px 32px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -913,11 +913,11 @@ body {
   margin-bottom: 50px;
 }
 
-.filtr__item {
+.filtr-item {
   margin-right: 8px;
 }
 
-.filtr__item:last-child {
+.filtr-item:last-child {
   margin-right: 0;
 }
 
@@ -961,18 +961,18 @@ body {
       flex-wrap: wrap;
 }
 
-.portfolio__item {
+.portfolio-item {
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);
   margin: 0 30px 30px auto;
   background-color: #FFFFFF;
 }
 
-.portfolio__item:nth-child(3n) {
+.portfolio-item:nth-child(3n) {
   margin-right: 0;
 }
 
-.portfolio__item:nth-child(n+7) {
+.portfolio-item:nth-child(n+7) {
   margin-bottom: 0;
   margin-left: 0;
 }
@@ -1013,7 +1013,7 @@ body {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__thumb {
+.portfolio-thumb {
   position: relative;
   overflow: hidden;
 }

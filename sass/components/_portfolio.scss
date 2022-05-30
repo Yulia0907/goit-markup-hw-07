@@ -6,12 +6,12 @@
     margin-bottom: 50px;
 }
 
-.filtr-item {
+.filtr__item {
     margin-right: 8px;
-}
 
-.filtr-item:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .filtr__button {
@@ -33,37 +33,36 @@
     cursor: pointer;
     letter-spacing: 0.03em;
     color: $brand-color;
-}
 
-.filtr__button:hover,
-.filtr__button:focus {
-    color: $logo-color;
-    background-color: $brand-btn-background;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    &:hover,
+    &:focus {
+        color: $logo-color;
+        background-color: $brand-btn-background;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+    }
 }
-
 
 .portfolio {
     display: flex;
     flex-wrap: wrap;
 }
 
-.portfolio-item {
+.portfolio__item {
     flex-basis: calc((100% - 60px) / 3);
     margin: 0 30px 30px auto;
     background-color: $logo-color;
-}
 
-.portfolio-item:nth-child(3n) {
-    margin-right: 0;
-}
-
-.portfolio-item:nth-child(n+7) {
-    margin-bottom: 0;
-    margin-left: 0;
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+    
+    &:nth-child(n+7) {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
 }
 
 .port-title {
@@ -92,17 +91,17 @@
 
 .portfolio__link {
     transition: box-shadow $transition-duration $transition-timing-function;
-}
-
-.portfolio__link:hover,
-.portfolio__link:focus {
+    
+    &:hover,
+    &:focus {
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
-.portfolio-thumb {
+.portfolio__thumb {
     position: relative;
     overflow: hidden;
 }
@@ -131,6 +130,9 @@
 .portfolio__link:focus .card {
     transform: translateY(0);
 }
+
+
+
 
 
 

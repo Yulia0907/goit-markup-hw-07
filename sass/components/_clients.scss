@@ -1,14 +1,15 @@
 /* Постоянные клиенты */
 
 
-.clients-item {
+.clients__item {
     width: 170px;
     height: 92px;
     margin-right: 30px;
-}
 
-.clients-item:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+    }
+
 }
 
 .clients__link {
@@ -24,6 +25,12 @@
     border: 1px solid $border-color;
     border-radius: 3px;
     background-color: $logo-color;
+
+    &:hover,
+    &:focus {
+        color: $brand-btn-background;
+        border: 1px solid $brand-btn-background;
+    }
 }
 
 .clients__icon {
@@ -32,8 +39,7 @@
     fill: currentColor;
 }
 
-.clients__link:hover,
-.clients__link:focus {
-    color: $brand-btn-background;
-    border: 1px solid $brand-btn-background;
-}
+
+
+
+
