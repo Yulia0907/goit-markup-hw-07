@@ -6,15 +6,8 @@
     background-color: $logo-color;
 }
 
-.logo {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
-
 .header__container,
 .header-nav-logo,
-.logo,
 .header-contacts,
 .site-nav {
     display: flex;
@@ -22,8 +15,15 @@
     justify-content: space-between;
 }
 
-.logo,
-.logo__dark {
+.logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     font-family: $font-logo;
     font-style: normal;
     font-weight: 700;
@@ -33,11 +33,16 @@
 }
 
 .logo__dark {
+    font-family: $font-logo;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $brand-btn-background;
     color: #000000;
 }
 
-.site-nav__link,
-.header-contacts__link {
+.site-nav__link {
     transition: color $transition-duration $transition-timing-function;
 
     display: flex;
@@ -50,6 +55,11 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: $brand-color;
+
+    &:hover,
+    &:focus {
+        color: $brand-btn-background;
+    }
 }
 
 .site-nav .site-nav__item,
@@ -68,8 +78,22 @@
 
 .header-contacts__link {
     transition: color $transition-duration $transition-timing-function;
-
+    
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color: $brand-second-color;
+
+    &:hover,
+    &:focus {
+        color: $brand-btn-background;
+    }
 }
 
 .header-contacts__icon {
@@ -77,18 +101,11 @@
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
-}
 
-.header-contacts__icon.tel {
-    width: 10px;
-    height: 16px;
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus,
-.header-contacts__link:hover,
-.header-contacts__link:focus {
-    color: $brand-btn-background;
+    &.tel {
+        width: 10px;
+        height: 16px;
+    }
 }
 
 .site-nav__item, .header-contacts__item {

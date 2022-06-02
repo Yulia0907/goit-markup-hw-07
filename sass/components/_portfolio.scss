@@ -99,6 +99,11 @@
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+
+    &:hover .card,
+    &:focus .card {
+        transform: translateY(0);
+    }
 }
 
 .portfolio__thumb {
@@ -126,10 +131,6 @@
     color: $logo-color;
 }
 
-.portfolio__link:hover .card,
-.portfolio__link:focus .card {
-    transform: translateY(0);
-}
 
 
 

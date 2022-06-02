@@ -1,9 +1,15 @@
 /* Наша команда */
+
 .section--background {
     background-color: $team-background;
 }
 
-.team,
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .clients {
     display: flex;
     align-items: center;
@@ -15,18 +21,19 @@
 
     color: $brand-color;
     font-weight: 500;
-}
-
-.team__title,
-.team__text {
-    text-align: center;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
 }
+
 
 .team__text {
     margin-bottom: 16px;
     color: $brand-second-color;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 
 .team__item {

@@ -1,5 +1,4 @@
-.logo-footer,
-.logo-ligth {
+.logo-footer {
     font-family: $font-logo;
     font-style: normal;
     font-weight: 700;
@@ -9,6 +8,12 @@
 }
 
 .logo-ligth {
+    font-family: $font-logo;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $brand-btn-background;
     color: $logo-color;
 }
 
@@ -18,12 +23,6 @@
     background-color: $banner-background;
 }
 
-.footer-address,
-.footer-contacts__item {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-}
 
 .address {
     margin-top: 20px;
@@ -33,6 +32,10 @@
     width: 231px;
     color: $logo-color;
     margin-bottom: 9px;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 .footer-contacts__link {
@@ -51,6 +54,9 @@
 }
 
 .footer-contacts__item {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -154,10 +160,12 @@
     border-radius: 4px;
     border-color: $brand-btn-background;
 }
+
 .subscribe__icon {
     width: 24px;
     height: 24px;
 }
+
 .subscribe__btn-span {
     margin-right: 10px;
 }
